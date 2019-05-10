@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Fahrenheit</label>
+<input id="f" type="number" placeholder="Fahrenheit" oninput="chueyn(this.value)" onchange="chueyn(this.value)"><br><br>
+<p>ketqua do C la: <span id="c"></span></p>
+<script>
+    function chueyn(f) {
+        f=parseFloat(f)
+        document.getElementById("c").innerHTML=(f-32)/1.8
+    }
+</script>
+
+</body>
+</html>
